@@ -60,24 +60,28 @@ const Home = () => {
                         <h2 className="text-lg">Daftar Isi</h2>
                         <ul className="pt-2 pl-5 list-disc">
                             <li>
-                                <button onClick={() => handleScroll("speed-learning")} className="hover:text-blue-200 transition duration-300">
+                                <button onClick={() => handleScroll("speed-learning")}
+                                        className="hover:text-blue-200 transition duration-300">
                                     Metode Speed Learning
                                 </button>
                             </li>
                             <ol className="pl-4 list-decimal">
                                 <li>
-                                    <button onClick={() => handleScroll("six-thinking-hats")} className="hover:text-blue-200 transition duration-300">
+                                    <button onClick={() => handleScroll("six-thinking-hats")}
+                                            className="hover:text-blue-200 transition duration-300">
                                         Six Thinking Hats
                                     </button>
                                 </li>
                                 <li>
-                                    <button onClick={() => handleScroll("mind-mapping")} className="hover:text-blue-200 transition duration-300">
+                                    <button onClick={() => handleScroll("mind-mapping")}
+                                            className="hover:text-blue-200 transition duration-300">
                                         Mind Mapping
                                     </button>
                                 </li>
                             </ol>
                             <li>
-                                <button onClick={() => handleScroll("tips")} className="hover:text-blue-200 transition duration-300">
+                                <button onClick={() => handleScroll("tips")}
+                                        className="hover:text-blue-200 transition duration-300">
                                     Tips dan Trik Belajar Efektif
                                 </button>
                             </li>
@@ -99,7 +103,8 @@ const Home = () => {
                                 <p className="font-semibold">Topi Putih</p>
                                 <p>Fokus pada informasi fakta dan data.</p>
                             </div>
-                            <div className="bg-red-600 text-white py-4 p-2 items-center text-center rounded-lg shadow-lg">
+                            <div
+                                className="bg-red-600 text-white py-4 p-2 items-center text-center rounded-lg shadow-lg">
                                 <p className="font-semibold">Topi Merah</p>
                                 <p>Menekankan emosi dan intuisi dalam proses berpikir.</p>
                             </div>
@@ -107,15 +112,18 @@ const Home = () => {
                                 <p className="font-semibold">Topi Hitam</p>
                                 <p>Analisis risiko dan aspek negatif dari keputusan.</p>
                             </div>
-                            <div className="bg-yellow-500 text-white py-4 p-2 items-center text-center rounded-lg shadow-lg">
+                            <div
+                                className="bg-yellow-500 text-white py-4 p-2 items-center text-center rounded-lg shadow-lg">
                                 <p className="font-semibold">Topi Kuning</p>
                                 <p>Menyusun segala keuntungan yang mungkin ada.</p>
                             </div>
-                            <div className="bg-green-600 text-white py-4 p-2 items-center text-center rounded-lg shadow-lg">
+                            <div
+                                className="bg-green-600 text-white py-4 p-2 items-center text-center rounded-lg shadow-lg">
                                 <p className="font-semibold">Topi Hijau</p>
                                 <p>Mendorong kreativitas dan ide baru.</p>
                             </div>
-                            <div className="bg-blue-700 text-white py-4 p-2 items-center text-center rounded-lg shadow-lg">
+                            <div
+                                className="bg-blue-700 text-white py-4 p-2 items-center text-center rounded-lg shadow-lg">
                                 <p className="font-semibold">Topi Biru</p>
                                 <p>Mengarahkan dan mengatur jalannya pemikiran.</p>
                             </div>
@@ -138,7 +146,7 @@ const Home = () => {
                     <h3 id="tips" className="text-justify pt-10 font-semibold text-3xl">
                         Tips dan Trik Belajar Efektif
                     </h3>
-                    <p className="text-justify pt-2 pb-10 text-lg">
+                    <p className="text-justify pt-2 pb-20 text-lg">
                         <li>
                             <i className="font-semibold">Atur Waktu dan Tentukan Prioritas :</i> Buat jadwal belajar
                             terstruktur dengan waktu khusus untuk berfokus pada materi inti.
@@ -152,7 +160,7 @@ const Home = () => {
                             atau membuat catatan digital.
                         </li>
                     </p>
-
+                    <hr className="border-t-2 border-gray-700 my-4 w-full mx-auto"/>
                 </div>
             </div>
         </section>
