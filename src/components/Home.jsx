@@ -13,6 +13,13 @@ const Home = () => {
         });
     }, []);
 
+    const handleScroll = (id) => {
+        document.getElementById(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        });
+    };
+
     return (
         <section className="bg-gray-200 lg:px-52 md:px-20 sm:px-12 px-8" id="home">
             <div className="h-full flex justify-center text-center">
@@ -51,18 +58,28 @@ const Home = () => {
                     <div className="lg:w-1/3 w-auto p-4 px-7 mt-10 bg-gray-400 text-start rounded-lg">
                         <h2 className="text-lg">Daftar Isi</h2>
                         <ul className="pt-2 pl-5 list-disc">
-                            <li><a href="#speed-learning" className="hover:text-blue-200 transition duration-300">Metode Speed
-                                Learning</a></li>
+                            <li>
+                                <button onClick={() => handleScroll("speed-learning")} className="hover:text-blue-200 transition duration-300">
+                                    Metode Speed Learning
+                                </button>
+                            </li>
                             <ol className="pl-4 list-decimal">
-                                <li><a href="#six-thinking-hats"
-                                       className="hover:text-blue-200 transition duration-300">Six Thinking Hats</a>
+                                <li>
+                                    <button onClick={() => handleScroll("six-thinking-hats")} className="hover:text-blue-200 transition duration-300">
+                                        Six Thinking Hats
+                                    </button>
                                 </li>
-                                <li><a href="#mind-mapping"
-                                       className="hover:text-blue-200 transition duration-300">Mind Mapping</a>
+                                <li>
+                                    <button onClick={() => handleScroll("mind-mapping")} className="hover:text-blue-200 transition duration-300">
+                                        Mind Mapping
+                                    </button>
                                 </li>
                             </ol>
-                            <li><a href="#tips" className="hover:text-blue-200 transition duration-300">Tips
-                                dan Trik Belajar Efektif</a></li>
+                            <li>
+                                <button onClick={() => handleScroll("tips")} className="hover:text-blue-200 transition duration-300">
+                                    Tips dan Trik Belajar Efektif
+                                </button>
+                            </li>
                         </ul>
                     </div>
 
@@ -104,24 +121,12 @@ const Home = () => {
                         </div>
                     </p>
 
-                    <h4 id="six-thinking-hats" className="text-justify pt-6 font-semibold text-2xl">2. Mind Mapping</h4>
+                    <h4 id="mind-mapping" className="text-justify pt-6 font-semibold text-2xl">2. Mind Mapping</h4>
                     <p className="text-justify pt-2 pb-2 text-lg">
                         Mind Mapping adalah teknik visualisasi yang dapat membantu mengatur informasi secara efektif,
                         mempercepat pemahaman, dan memudahkan proses belajar.
-                        <br/><br/>
+                        <br/>
                         <MindMapping />
-                        {/*<li>*/}
-                        {/*    <i className="font-semibold">Memulai dengan Ide Utama :</i> Buat lingkaran dengan topik*/}
-                        {/*    utama di tengah, kemudian tarik cabang-cabang yang mengarah ke sub-topik.*/}
-                        {/*</li>*/}
-                        {/*<li>*/}
-                        {/*    <i className="font-semibold">Menggunakan Kata Kunci :</i> Setiap cabang mencerminkan konsep*/}
-                        {/*    penting untuk memudahkan ingatan.*/}
-                        {/*</li>*/}
-                        {/*<li>*/}
-                        {/*    <i className="font-semibold">Menggabungkan Visual :</i> Tambahkan warna, simbol, atau gambar*/}
-                        {/*    untuk membantu memvisualisasikan ide dengan lebih baik.*/}
-                        {/*</li>*/}
                     </p>
                     <hr className="border-t-2 border-gray-700 my-6 w-full mx-auto"/>
 

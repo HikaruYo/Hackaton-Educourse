@@ -20,9 +20,8 @@ function MindMapping() {
 
     return (
         <div className="flex flex-col items-center p-4">
-            {/* Text */}
             <p
-                className="md:text-justify text-left mb-4 max-w-md transition-opacity duration-500 ease-in-out whitespace-pre-line"
+                className="md:text-justify text-left mb-4 max-w-md transition-opacity duration-500 ease-in-out whitespace-pre-line md:min-h-0 min-h-[140px]"
                 key={currentStep}
             >
                 <strong>{steps[currentStep].boldText}</strong> {steps[currentStep].text}
@@ -67,4 +66,4 @@ function MindMapping() {
     );
 }
 
-export default MindMapping
+export default MindMapping;
