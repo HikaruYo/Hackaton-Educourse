@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useEffect} from 'react'
+import ScrollReveal from 'scrollreveal'
 
 const Home = () => {
+    useEffect(() => {
+        ScrollReveal().reveal('.reveal', {
+            distance: '50px',
+            duration: 1000,
+            easing: 'ease-in-out',
+            origin: 'bottom',
+            reset: true,
+        });
+    }, []);
+
     return (
         <section className="bg-gray-200 lg:px-52 md:px-20 sm:px-12 px-8" id="home">
             <div className="h-full flex justify-center text-center">
-                <div className="flex-col">
+                <div className="flex-col reveal">
 
                     <h1 className="pt-12 text-4xl font-bold">
                         Sumpah Pemuda: Membangun Generasi Cerdas dengan Speed Learning
@@ -27,7 +38,7 @@ const Home = () => {
                         Speed Learning adalah teknik untuk memahami materi pelajaran secara mendalam dalam waktu singkat
                         dengan metode berpikir efektif.
                     </p>
-                    <h3 className="text-justify pt-4 font-semibold text-2xl">
+                    <h3 className="md:text-justify text-left pt-4 font-semibold text-2xl">
                         Mengapa Belajar Cepat Penting?
                     </h3>
                     <p className="text-justify pt-2 text-lg">
@@ -55,7 +66,7 @@ const Home = () => {
                     </div>
 
                     <hr className="border-t-2 border-gray-700 mb-2 mt-10 w-full mx-auto"/>
-                    <h3 id="speed-learning" className="text-justify pt-10 font-semibold text-3xl">
+                    <h3 id="speed-learning" className="md:text-justify text-left pt-10 font-semibold text-3xl">
                         Metode Speed Learning
                     </h3>
                     <h4 id="six-thinking-hats" className="text-justify pt-8 font-semibold text-2xl">1. Six Thinking
@@ -64,18 +75,32 @@ const Home = () => {
                         Metode ini dikembangkan oleh Edward de Bono untuk berpikir kreatif dan memecahkan masalah secara
                         sistematis.
                         <br/><br/>
-                        <i className="font-semibold">Topi Putih</i> : Fokus pada informasi fakta dan data.
-                        <br/>
-                        <i className="font-semibold">Topi Merah</i> : Menekankan emosi dan intuisi dalam proses
-                        berpikir.
-                        <br/>
-                        <i className="font-semibold">Topi Hitam</i> : Analisis risiko dan aspek negatif dari keputusan.
-                        <br/>
-                        <i className="font-semibold">Topi Kuning</i> : Menyusun segala keuntungan yang mungkin ada.
-                        <br/>
-                        <i className="font-semibold">Topi Hijau</i> : Mendorong kreativitas dan ide baru.
-                        <br/>
-                        <i className="font-semibold">Topi Biru</i> : Mengarahkan dan mengatur jalannya pemikiran.
+                        <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
+                            <div className="bg-white text-black py-4 p-2 items-center text-center rounded-lg">
+                                <p className="font-semibold">Topi Putih</p>
+                                <p>Fokus pada informasi fakta dan data.</p>
+                            </div>
+                            <div className="bg-red-600 text-white py-4 p-2 items-center text-center rounded-lg">
+                                <p className="font-semibold">Topi Merah</p>
+                                <p>Menekankan emosi dan intuisi dalam proses berpikir.</p>
+                            </div>
+                            <div className="bg-black text-white py-4 p-2 items-center text-center rounded-lg">
+                                <p className="font-semibold">Topi Hitam</p>
+                                <p>Analisis risiko dan aspek negatif dari keputusan.</p>
+                            </div>
+                            <div className="bg-yellow-400 text-white py-4 p-2 items-center text-center rounded-lg">
+                                <p className="font-semibold">Topi Kuning</p>
+                                <p>Menyusun segala keuntungan yang mungkin ada.</p>
+                            </div>
+                            <div className="bg-green-600 text-white py-4 p-2 items-center text-center rounded-lg">
+                                <p className="font-semibold">Topi Hijau</p>
+                                <p>Mendorong kreativitas dan ide baru.</p>
+                            </div>
+                            <div className="bg-blue-700 text-white py-4 p-2 items-center text-center rounded-lg">
+                                <p className="font-semibold">Topi Biru</p>
+                                <p>Mengarahkan dan mengatur jalannya pemikiran.</p>
+                            </div>
+                        </div>
                     </p>
 
                     <h4 id="six-thinking-hats" className="text-justify pt-6 font-semibold text-2xl">2. Mind Mapping</h4>
