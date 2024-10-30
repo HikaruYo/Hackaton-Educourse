@@ -1,5 +1,6 @@
 import React, { useEffect} from 'react'
 import ScrollReveal from 'scrollreveal'
+import MindMapping from "./MindMapping.jsx";
 
 const Home = () => {
     useEffect(() => {
@@ -18,9 +19,9 @@ const Home = () => {
                 <div className="flex-col reveal">
 
                     <h1 className="pt-12 text-4xl font-bold">
-                        Sumpah Pemuda: Membangun Generasi Cerdas dengan Speed Learning
+                        Membangun Generasi Cerdas dengan Speed Learning
                     </h1>
-                    <p className="pt-4 px-10">
+                    <p className="pt-6 px-10">
                         Menginspirasi pemuda Indonesia untuk belajar dengan teknik efektif yang memungkinkan pemahaman
                         lebih cepat dan mendalam.
                     </p>
@@ -80,23 +81,23 @@ const Home = () => {
                                 <p className="font-semibold">Topi Putih</p>
                                 <p>Fokus pada informasi fakta dan data.</p>
                             </div>
-                            <div className="bg-red-600 text-white py-4 p-2 items-center text-center rounded-lg">
+                            <div className="bg-red-600 text-white py-4 p-2 items-center text-center rounded-lg shadow-lg">
                                 <p className="font-semibold">Topi Merah</p>
                                 <p>Menekankan emosi dan intuisi dalam proses berpikir.</p>
                             </div>
-                            <div className="bg-black text-white py-4 p-2 items-center text-center rounded-lg">
+                            <div className="bg-black text-white py-4 p-2 items-center text-center rounded-lg shadow-lg">
                                 <p className="font-semibold">Topi Hitam</p>
                                 <p>Analisis risiko dan aspek negatif dari keputusan.</p>
                             </div>
-                            <div className="bg-yellow-400 text-white py-4 p-2 items-center text-center rounded-lg">
+                            <div className="bg-yellow-500 text-white py-4 p-2 items-center text-center rounded-lg shadow-lg">
                                 <p className="font-semibold">Topi Kuning</p>
                                 <p>Menyusun segala keuntungan yang mungkin ada.</p>
                             </div>
-                            <div className="bg-green-600 text-white py-4 p-2 items-center text-center rounded-lg">
+                            <div className="bg-green-600 text-white py-4 p-2 items-center text-center rounded-lg shadow-lg">
                                 <p className="font-semibold">Topi Hijau</p>
                                 <p>Mendorong kreativitas dan ide baru.</p>
                             </div>
-                            <div className="bg-blue-700 text-white py-4 p-2 items-center text-center rounded-lg">
+                            <div className="bg-blue-700 text-white py-4 p-2 items-center text-center rounded-lg shadow-lg">
                                 <p className="font-semibold">Topi Biru</p>
                                 <p>Mengarahkan dan mengatur jalannya pemikiran.</p>
                             </div>
@@ -108,18 +109,19 @@ const Home = () => {
                         Mind Mapping adalah teknik visualisasi yang dapat membantu mengatur informasi secara efektif,
                         mempercepat pemahaman, dan memudahkan proses belajar.
                         <br/><br/>
-                        <li>
-                            <i className="font-semibold">Memulai dengan Ide Utama :</i> Buat lingkaran dengan topik
-                            utama di tengah, kemudian tarik cabang-cabang yang mengarah ke sub-topik.
-                        </li>
-                        <li>
-                            <i className="font-semibold">Menggunakan Kata Kunci :</i> Setiap cabang mencerminkan konsep
-                            penting untuk memudahkan ingatan.
-                        </li>
-                        <li>
-                            <i className="font-semibold">Menggabungkan Visual :</i> Tambahkan warna, simbol, atau gambar
-                            untuk membantu memvisualisasikan ide dengan lebih baik.
-                        </li>
+                        <MindMapping />
+                        {/*<li>*/}
+                        {/*    <i className="font-semibold">Memulai dengan Ide Utama :</i> Buat lingkaran dengan topik*/}
+                        {/*    utama di tengah, kemudian tarik cabang-cabang yang mengarah ke sub-topik.*/}
+                        {/*</li>*/}
+                        {/*<li>*/}
+                        {/*    <i className="font-semibold">Menggunakan Kata Kunci :</i> Setiap cabang mencerminkan konsep*/}
+                        {/*    penting untuk memudahkan ingatan.*/}
+                        {/*</li>*/}
+                        {/*<li>*/}
+                        {/*    <i className="font-semibold">Menggabungkan Visual :</i> Tambahkan warna, simbol, atau gambar*/}
+                        {/*    untuk membantu memvisualisasikan ide dengan lebih baik.*/}
+                        {/*</li>*/}
                     </p>
                     <hr className="border-t-2 border-gray-700 my-6 w-full mx-auto"/>
 
