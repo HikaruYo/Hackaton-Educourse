@@ -1,6 +1,7 @@
 import React, { useEffect} from 'react'
 import ScrollReveal from 'scrollreveal'
 import MindMapping from "./MindMapping.jsx";
+import MindImg from '../assets/mind-mapping.jpg'
 
 const Home = () => {
     useEffect(() => {
@@ -21,7 +22,7 @@ const Home = () => {
     };
 
     return (
-        <section className="bg-gray-200 lg:px-52 md:px-20 sm:px-12 px-8" id="home">
+        <section className="bg-[#0c0d12] text-white lg:px-52 md:px-20 sm:px-12 px-8" id="home">
             <div className="h-full flex justify-center text-center">
                 <div className="flex-col reveal">
 
@@ -55,7 +56,7 @@ const Home = () => {
                         efektif.
                     </p>
 
-                    <div className="lg:w-1/3 w-auto p-4 px-7 mt-10 bg-gray-400 text-start rounded-lg">
+                    <div className="lg:w-1/3 w-auto p-4 px-7 mt-10 bg-gray-400 text-start text-black rounded-lg">
                         <h2 className="text-lg">Daftar Isi</h2>
                         <ul className="pt-2 pl-5 list-disc">
                             <li>
@@ -122,12 +123,16 @@ const Home = () => {
                     </p>
 
                     <h4 id="mind-mapping" className="text-justify pt-6 font-semibold text-2xl">2. Mind Mapping</h4>
-                    <p className="text-justify pt-2 pb-2 text-lg">
-                        Mind Mapping adalah teknik visualisasi yang dapat membantu mengatur informasi secara efektif,
-                        mempercepat pemahaman, dan memudahkan proses belajar.
-                        <br/>
-                        <MindMapping />
-                    </p>
+                    <div className="flex flex-col text-justify items-center pt-2 pb-2 text-lg">
+                        <p>
+                            Mind Mapping adalah teknik visualisasi yang dapat membantu mengatur informasi secara
+                            efektif,
+                            mempercepat pemahaman, dan memudahkan proses belajar.
+                            <br/>
+                        </p>
+                        <img src={MindImg} className="w-[500px] my-2 rounded-lg"/>
+                        <MindMapping/>
+                    </div>
                     <hr className="border-t-2 border-gray-700 my-6 w-full mx-auto"/>
 
                     <h3 id="tips" className="text-justify pt-10 font-semibold text-3xl">

@@ -45,7 +45,7 @@ function MindMapping() {
                         <div
                             key={index}
                             className={`rounded-full transition-all duration-300 ${
-                                currentStep === index ? 'w-10 h-10 bg-gray-500' : 'w-8 h-8 bg-gray-300'
+                                currentStep === index ? 'w-8 h-8 bg-gray-500' : 'w-5 h-5 bg-gray-300'
                             }`}
                         />
                     ))}
